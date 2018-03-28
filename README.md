@@ -72,6 +72,32 @@ public class ClassResultName {
 	
 }
 
+Finalmente en la clase principal, el metodo "getReportById(String id)" devuelve automaticamente el nombre y cantidad de items de un vendedor dado su Id, esto mediante un objeto con la siguiente estructura:
+
+public class ClassReport {
+
+	private String userName;
+	private int totalItems;
+	
+	public String getUserName() {
+		return userName;
+	}
+	public void setUserName(String userName) {
+		this.userName = userName;
+	}
+	public int getTotalItems() {
+		return totalItems;
+	}
+	public void setTotalItems(int totalItems) {
+		this.totalItems = totalItems;
+	}
+	
+}
+
+
+
+
+
 La traducción de la respuesta de la API hacia objeto java se hace mediante la librería 
 com.google.gson.Gson;
 Luego es básicamente, instanciar el objeto y mediante el método “fromJson” se recibe la respuesta de la api y se convierte en objeto especificando su clase en el segundo parámetro.
