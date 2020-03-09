@@ -1,0 +1,12 @@
+/target/
+/bin/
+*/.sonar/
+*.class
+*/target/
+/.scannerwork/
+*.temp
+*/logs/
+*.DS_Store
+*.iml
+*.idea
+*.project
